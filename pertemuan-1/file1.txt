@@ -1,1 +1,6 @@
+<<<<<<< HEAD
 ganteng lagi
+=======
+Muhamad Fajri Ramadhani
+5520122063
+>>>>>>> 7bcefcec67a14bd687080c89a7409200d1db6072
