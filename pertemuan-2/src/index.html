@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Latihan Tailwind CSS</title>
+   <link rel="stylesheet" href="./output.css">
+</head>
+<body class="bg-gray-200 font-sans">
+   <section id="title" class="text-center py-4">
+      <h1 class="text-2xl font-bold">Todo List Application</h1>
+   </section>
+   <section id="input" class="flex justify-center items-center space-x-2 py-4">
+      <input type="text" name="assignment" id="assignment" 
+             class="border border-red-600 rounded-md px-4 py-2 w-96 shadow-sm focus:outline-none focus:border-blue-400"
+             placeholder="Inputkan tugas yang akan dikerjakan ...">
+      <input type="button" id="btn-tambah" value="TAMBAH"
+             class="bg-gray-800 hover:bg-blue-500 text-white px-4 py-2 rounded-md cursor-pointer">
+   </section>
+   <section id="output" class="mx-auto w-full max-w-2xl space-y-4">
+      <div class="flex justify-between items-center bg-white shadow-md p-4 rounded-md">
+         <p class="text-gray-700">test</p>
+         <div class="space-x-0">
+            <input type="button" id="btn-selesai" value="SELESAI" data-task="${task.id}"
+                  class="bg-green-500 hover:bg-green-700 text-black px-4 py-2 rounded-md cursor-pointer">
+            <input type="button" id="btn-hapus" value="HAPUS" data-task="${task.id}"
+                  class="bg-red-500 hover:bg-red-600 text-black px-4 py-2 rounded-md cursor-pointer">
+         </div>
+      </div>
+   </section>
+   <script src="main.js"></script>
+</body>
+</html>
